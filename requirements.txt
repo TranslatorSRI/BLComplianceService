@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pyyaml
+git+git://github.com/NCATS-Tangerine/kgx@master
+fastjsonschema
+requests

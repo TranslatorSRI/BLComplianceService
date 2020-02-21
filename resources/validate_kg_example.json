@@ -1,0 +1,20 @@
+{
+  "edges": [
+    {
+      "id": "553903",
+      "source_id": "https://omim.org/entry/603903",
+      "target_id": "https://www.uniprot.org/uniprot/P00738",
+      "relation_label": ["affects"],
+      "additionalProp1": {}
+    }
+  ],
+  "nodes": [
+    {
+      "id": "OMIM:603903",
+      "name": "Haptoglobin",
+      "type": "Disease",
+      "additionalProp1": {}
+    }
+  ],
+  "additionalProp1": {}
+}
