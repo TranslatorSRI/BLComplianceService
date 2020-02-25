@@ -1,0 +1,7 @@
+# TODO anchor these in versions
+
+# Used for validation
+biolink_model: "https://raw.githubusercontent.com/biolink/biolink-model/master/json-schema/biolink-model.json"
+
+# Used to generate python dataclasses
+reasoner_api_model: "https://raw.githubusercontent.com/NCATS-Tangerine/NCATS-ReasonerStdAPI/master/API/TranslatorReasonersAPI.yaml"
