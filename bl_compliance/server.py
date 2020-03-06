@@ -7,6 +7,7 @@ from typing import Union, Dict, Any, List
 from fastapi import FastAPI, Body
 from starlette.responses import JSONResponse
 from starlette.requests import Request
+from dataclasses import asdict
 from .validator import validate_with_jsonschema, validate_with_kgx
 from .models.knowledge_graph import KnowledgeGraph
 from .models.message import Message
@@ -41,7 +42,7 @@ biolink_schema = req.json()
 async def blvalidation_exception_handler(request: Request, exc: BlValidationException):
     return JSONResponse(
         status_code=418,
-        content=[content.__dict__ for content in exc.content],
+        content=[content.as_dict() for content in exc.content],
     )
 
 @app.post('/validate/knowledge_graph', response_model=Dict[Any, Any])
