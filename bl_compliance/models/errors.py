@@ -7,6 +7,9 @@ class TransformationError:
     error_type: str
     message: str
 
+    def as_dict(self):
+        return vars(self)
+
 
 @dataclass()
 class KgxError():
