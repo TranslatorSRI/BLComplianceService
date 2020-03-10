@@ -127,6 +127,20 @@
       "object": "MONDO:0013329",
       "edge_label": "biolink:related_to",
       "relation": "RO:0003304"
+    },
+    {
+      "id": "044a7916-fba9-4b4f-ae48-f0815b0b222d",
+      "subject": "HGNC:11603",
+      "object": "MONDO:0017148",
+      "edge_label": "biolink:related_to",
+      "relation": "RO:0004013"
+    },
+    {
+      "id": "1a7f02a7-24ab-4480-809d-f61e80876b70",
+      "subject": "HGNC:11603",
+      "object": "MONDO:0007841",
+      "edge_label": "biolink:related_to",
+      "relation": "RO:0004013"
     }
   ]
 }

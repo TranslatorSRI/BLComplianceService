@@ -19,7 +19,7 @@ def test_compliant_json_with_kgx():
 
     errors = validate_with_kgx(data)
 
-    assert len(errors) == 1
+    assert len(errors) == 0
 
 
 def test_robokop_with_kgx():

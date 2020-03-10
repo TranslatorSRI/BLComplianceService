@@ -7,7 +7,6 @@ from typing import Union, Dict, Any, List
 from fastapi import FastAPI, Body
 from starlette.responses import JSONResponse
 from starlette.requests import Request
-from dataclasses import asdict
 from .validator import validate_with_jsonschema, validate_with_kgx
 from .models.knowledge_graph import KnowledgeGraph
 from .models.message import Message
