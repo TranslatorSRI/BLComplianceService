@@ -9,7 +9,6 @@ biolink_json = Path(__file__).parent / 'resources' / 'biolink-compliant.json'
 robokop_json = Path(__file__).parent / 'resources' / 'robokop.json'
 
 
-@pytest.mark.skip(reason="Example not yet biolink compliant")
 def test_compliant_json_with_kgx():
     """
     Test bl compliant json with kgx validator

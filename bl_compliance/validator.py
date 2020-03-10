@@ -4,7 +4,7 @@ using KGX and json schema
 """
 from typing import List, Union, Dict
 from kgx.transformers.rsa_transformer import RsaTransformer
-from kgx.validator import Validator, NodeError, EdgeError
+from kgx.validator import Validator, ErrorType, MessageLevel, ValidationError
 from dataclasses import asdict
 import fastjsonschema
 from jsonschema import validate as jsonvalidate
@@ -13,10 +13,9 @@ from .models.message import Message
 from .models.errors import TransformationError
 
 
-
 def validate_with_kgx(
         data: Union[Dict, KnowledgeGraph, Message]
-) -> List[Union[NodeError, EdgeError, TransformationError]]:
+) -> List[Union[ValidationError, TransformationError]]:
     """
     Validate a rsa knowledge graph with kgx
 
@@ -49,10 +48,9 @@ def validate_with_kgx(
                 message="Could not transform reasoner "
                         "message into biolink graph: {}".format(str(exc)),
         )]
-    validator = Validator()
-    validator.validate(biolinkified.graph)
+    validator = Validator(verbose=True)
 
-    return validator.errors
+    return validator.validate(biolinkified.graph)
 
 
 def validate_with_jsonschema(schema: Dict, data: Union[KnowledgeGraph, Message]):
