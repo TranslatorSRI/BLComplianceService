@@ -11,7 +11,7 @@
   "nodes": [
     {
       "id": "OMIM:603903",
-      "name": "Haptoglobin",
+      "name": "Sickle cell anemia",
       "type": "Disease",
       "additionalProp1": {}
     }
