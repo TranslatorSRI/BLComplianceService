@@ -19,9 +19,9 @@ class BlValidationException(Exception):
 
 
 app = FastAPI(
-    title="BioLink Compliance Service",
+    title="Biolink Validation Service",
     version="0.0.1",
-    description="Utilities for checking compliance with the BioLink Model",
+    description="Utilities for validating a graph object with the BioLink Model",
 )
 
 config_path = Path(__file__).parent.parent / 'conf' / 'config.yaml'
