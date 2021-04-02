@@ -5,7 +5,7 @@
 Validates a ReasonerAPI message for BioLink compliance
 
 
-### Geting started
+### Getting started
 
 This service requires python 3.7+
 
